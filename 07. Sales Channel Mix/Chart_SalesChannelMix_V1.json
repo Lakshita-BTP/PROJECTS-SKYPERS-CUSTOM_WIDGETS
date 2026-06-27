@@ -1,0 +1,65 @@
+{
+  "id": "com.max.saleschannelmix",
+  "version": "1.0.8",
+  "name": "Sales Channel Mix",
+  "newInstancePrefix": "SalesChannelMix",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSI4IiB5PSIxNiIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjRTVFNUVCIi8+PHJlY3QgeD0iOCIgeT0iMTYiIHdpZHRoPSIzNCIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI0Y5NzMxNiIvPjxyZWN0IHg9IjgiIHk9IjM2IiB3aWR0aD0iNDgiIGhlaWdodD0iOCIgcng9IjQiIGZpbGw9IiNFNUU1RUIiLz48cmVjdCB4PSI4IiB5PSIzNiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjMTYyNjNCIi8+PC9zdmc+",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-saleschannelmix",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGET_05_SALESCHANNELMIX@main/Chart_SalesChannelMix_V8.js",
+      "integrity": "sha384-aNz29hQ+6R8V+7L++YC6csPUmbuvKB5ElAACblyUqv3doLT6hh05vGkmlSY8utlL"
+    }
+  ],
+  "dataBindings": {},
+  "properties": {},
+  "methods": {
+    "setTitle": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "setRow": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "clearRows": {},
+    "setBarColor": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "setTrackColor": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "setUnitText": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "events": {
+    "onSelect": {}
+  }
+}
