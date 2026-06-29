@@ -1,0 +1,104 @@
+{
+  "id": "com.max.table.milestone",
+  "version": "1.0.4",
+  "name": "Detailed Table for Milestone Wise Outstanding",
+  "newInstancePrefix": "MilestoneTable",
+  "vendor": "MAX",
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSI0IiB5PSI4IiB3aWR0aD0iNTYiIGhlaWdodD0iNDgiIHJ4PSI2IiBmaWxsPSIjMWIyYTQxIi8+PHJlY3QgeD0iOCIgeT0iMTIiIHdpZHRoPSI0OCIgaGVpZ2h0PSI4IiBmaWxsPSIjMzQ0ZjZkIi8+PGxpbmUgeDE9IjI0IiB5MT0iMTIiIHgyPSIyNCIgeTI9IjU2IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIvPjxsaW5lIHgxPSI0MCIgeTE9IjEyIiB4Mj0iNDAiIHkyPSI1NiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48bGluZSB4MT0iOCIgeTE9IjI4IiB4Mj0iNTYiIHkyPSIyOCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48bGluZSB4MT0iOCIgeTE9IjQwIiB4Mj0iNTYiIHkyPSI0MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-table-milestone",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/00.%20Table_Widgets/01.%20Milestone%20Wise%20Outstanding/Table_MilestoneWiseOutstanding_V4.js",
+      "integrity": "sha384-NKOhDZr1bj1+yOgMdd1Pmf6NPqFEoWp3jhjf0SdEJJY1Zfl67EjK9fAFlQW/xD94"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Dimensions"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Measures"
+        }
+      ]
+    }
+  },
+  "properties": {},
+  "methods": {
+    "titleStyle": {
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "name": "fontSize",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "alignment",
+          "type": "string"
+        },
+        {
+          "name": "bold",
+          "type": "boolean"
+        },
+        {
+          "name": "background",
+          "type": "string"
+        }
+      ]
+    },
+    "headerStyle": {
+      "parameters": [
+        {
+          "name": "alignment",
+          "type": "string"
+        },
+        {
+          "name": "fontSize",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "background",
+          "type": "string"
+        }
+      ]
+    },
+    "rowsStyle": {
+      "parameters": [
+        {
+          "name": "alignment",
+          "type": "string"
+        },
+        {
+          "name": "fontSize",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "background",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "events": {}
+}
