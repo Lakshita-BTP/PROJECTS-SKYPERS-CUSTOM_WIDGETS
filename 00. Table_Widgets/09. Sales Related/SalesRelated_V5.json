@@ -1,0 +1,197 @@
+{
+  "id": "com.max.table.salestable",
+  "version": "1.0.5",
+  "name": "Detailed Table",
+  "newInstancePrefix": "SalesRelatedTable",
+  "vendor": "MAX",
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSI0IiB5PSI4IiB3aWR0aD0iNTYiIGhlaWdodD0iNDgiIHJ4PSI2IiBmaWxsPSIjMWIyYTQxIi8+PHJlY3QgeD0iOCIgeT0iMTIiIHdpZHRoPSI0OCIgaGVpZ2h0PSI4IiBmaWxsPSIjMzQ0ZjZkIi8+PGxpbmUgeDE9IjI0IiB5MT0iMTIiIHgyPSIyNCIgeTI9IjU2IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIvPjxsaW5lIHgxPSI0MCIgeTE9IjEyIiB4Mj0iNDAiIHkyPSI1NiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48bGluZSB4MT0iOCIgeTE9IjI4IiB4Mj0iNTYiIHkyPSIyOCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48bGluZSB4MT0iOCIgeTE9IjQwIiB4Mj0iNTYiIHkyPSI0MCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-table-salestable",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/00.%20Table_Widgets/09.%20Sales%20Related/SalesRelated_V5.js",
+      "integrity": "sha384-4Y0OGnhUrjhlX3DrjpprWj8X9cz/Jcmn4WCsNrdFmecFsMDjBA56Lqr3ru/XQkgq"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Dimensions"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Measures"
+        }
+      ]
+    }
+  },
+  "properties": {},
+  "methods": {
+    "titleStyle": {
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "name": "fontSize",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "alignment",
+          "type": "string"
+        },
+        {
+          "name": "bold",
+          "type": "boolean"
+        },
+        {
+          "name": "background",
+          "type": "string"
+        }
+      ]
+    },
+    "headerStyle": {
+      "parameters": [
+        {
+          "name": "alignment",
+          "type": "string"
+        },
+        {
+          "name": "fontSize",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "background",
+          "type": "string"
+        }
+      ]
+    },
+    "rowsStyle": {
+      "parameters": [
+        {
+          "name": "alignment",
+          "type": "string"
+        },
+        {
+          "name": "fontSize",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "background",
+          "type": "string"
+        }
+      ]
+    },
+    "columnStyle": {
+      "parameters": [
+        {
+          "name": "columnName",
+          "type": "string"
+        },
+        {
+          "name": "headerAlignment",
+          "type": "string"
+        },
+        {
+          "name": "headerFontSize",
+          "type": "string"
+        },
+        {
+          "name": "headerColor",
+          "type": "string"
+        },
+        {
+          "name": "headerBackground",
+          "type": "string"
+        },
+        {
+          "name": "valueAlignment",
+          "type": "string"
+        },
+        {
+          "name": "valueFontSize",
+          "type": "string"
+        },
+        {
+          "name": "valueColor",
+          "type": "string"
+        },
+        {
+          "name": "valueBackground",
+          "type": "string"
+        }
+      ]
+    },
+    "setDimensionFilter": {
+      "parameters": [
+        {
+          "name": "dimensionName",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "clearDimensionFilter": {
+      "parameters": []
+    },
+    "setTotalPosition": {
+      "parameters": [
+        {
+          "name": "position",
+          "type": "string"
+        }
+      ]
+    },
+    "setVisibleMeasures": {
+      "parameters": [
+        {
+          "name": "measureNames",
+          "type": "string"
+        }
+      ]
+    },
+    "clearVisibleMeasures": {
+      "parameters": []
+    },
+    "enableAveraging": {
+      "parameters": [
+        {
+          "name": "enable",
+          "type": "boolean"
+        }
+      ]
+    },
+    "hideDimensions": {
+      "parameters": [
+        {
+          "name": "dimensionNames",
+          "type": "string"
+        }
+      ]
+    },
+    "showAllDimensions": {
+      "parameters": []
+    }
+  },
+  "events": {}
+}
