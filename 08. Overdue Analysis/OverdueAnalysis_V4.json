@@ -1,0 +1,228 @@
+{
+  "id": "com.max.overdueanalysis",
+  "version": "1.0.4",
+  "name": "Overdue Analysis",
+  "newInstancePrefix": "OverdueAnalysis",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSI4IiBmaWxsPSIjMWIyYTQxIi8+PHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iNDQiIGhlaWdodD0iMTAiIHJ4PSI1IiBmaWxsPSIjZmZmZmZmIi8+PHJlY3QgeD0iMTAiIHk9IjI4IiB3aWR0aD0iMzYiIGhlaWdodD0iNiIgcng9IjMiIGZpbGw9IiMyRUJFNjkiLz48cmVjdCB4PSIxMCIgeT0iMzgiIHdpZHRoPSIyOCIgaGVpZ2h0PSI2IiByeD0iMyIgZmlsbD0iI0M1QTA0QSIvPjxyZWN0IHg9IjEwIiB5PSI0OCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjYiIHJ4PSIzIiBmaWxsPSIjRDg0MzM1Ii8+PC9zdmc+",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-overdueanalysis",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/08.%20Overdue%20Analysis/OverdueAnalysis_V4.js",
+      "integrity": "sha384-H2dQkFEDx3D7u3+phcekKkQFUD+lqQpM+9GB/e/wXZGpGI2s7dbWrHMLMZGuFlAq"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Amount"
+        }
+      ]
+    }
+  },
+  "properties": {},
+  "methods": {
+    "setTitle": {
+      "parameters": [
+        {
+          "name": "title",
+          "type": "string"
+        }
+      ]
+    },
+    "setTitleColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setHeaderBackground": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setCardBackground": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setTotalDueText": {
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ]
+    },
+    "setTotalDueTextColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setTotalDueValueColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setUnclearedText": {
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ]
+    },
+    "setUnclearedTextColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setUnclearedValueColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setUnclearedValue": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "number"
+        }
+      ]
+    },
+    "setGT30Text": {
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ]
+    },
+    "setGT30TextColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setGT30ValueColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setGT60Text": {
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ]
+    },
+    "setGT60TextColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setGT60ValueColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setBarColor": {
+      "parameters": [
+        {
+          "name": "index",
+          "type": "integer"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setBarLabel": {
+      "parameters": [
+        {
+          "name": "index",
+          "type": "integer"
+        },
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ]
+    },
+    "setLabelColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setDecimalPlaces": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "number"
+        }
+      ]
+    },
+    "setCurrencyUnit": {
+      "parameters": [
+        {
+          "name": "unit",
+          "type": "string"
+        }
+      ]
+    },
+    "getSelectedLabel": {
+      "returnType": "string"
+    },
+    "getSelectedValue": {
+      "returnType": "number"
+    }
+  },
+  "events": {
+    "onTotalDueClick": {},
+    "onUnclearedClick": {},
+    "onGT30Click": {},
+    "onGT60Click": {},
+    "onBarClick": {}
+  }
+}
