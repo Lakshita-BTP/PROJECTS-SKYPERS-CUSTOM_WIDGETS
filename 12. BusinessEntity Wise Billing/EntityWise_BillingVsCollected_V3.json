@@ -1,0 +1,77 @@
+{
+  "id": "com.max.billing",
+  "version": "1.0.3",
+  "name": "Business Entity Billing",
+  "newInstancePrefix": "Billing",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSI2IiB5PSIxMiIgd2lkdGg9IjUyIiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjRTdFM0RGIi8+PHJlY3QgeD0iNiIgeT0iMTIiIHdpZHRoPSIzNiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iIzM0NGY2ZCIvPjxyZWN0IHg9IjYiIHk9IjI4IiB3aWR0aD0iNTIiIGhlaWdodD0iOCIgcng9IjQiIGZpbGw9IiNFN0UzREYiLz48cmVjdCB4PSI2IiB5PSIyOCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjRjA4YTNjIi8+PHJlY3QgeD0iNiIgeT0iNDQiIHdpZHRoPSI1MiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI0U3RTNERiIvPjxyZWN0IHg9IjYiIHk9IjQ0IiB3aWR0aD0iNDQiIGhlaWdodD0iOCIgcng9IjQiIGZpbGw9IiNkNGIwNmEiLz48L3N2Zz4=",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-billing",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/12.%20BusinessEntity%20Wise%20Billing/EntityWise_BillingVsCollected_V3.js",
+      "integrity": "sha384-2EbwPnVDD//ElJ1FgCjSBH/8zteUVwlsVZXYn3fmmZh3HFjsRIr5/FVObQb9pYrB"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Business Entity"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Billing Amount"
+        }
+      ]
+    }
+  },
+  "properties": {},
+  "methods": {
+    "setTitle": {
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ]
+    },
+    "setTitleColor": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setTitleFontSize": {
+      "parameters": [
+        {
+          "name": "fontSize",
+          "type": "string"
+        }
+      ]
+    },
+    "setTitleStyle": {
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "fontSize",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "events": {}
+}
