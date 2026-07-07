@@ -140,12 +140,12 @@
 
       .main-value{
         font-size:50px;
-        font-weight:700;
+        font-weight:750;
         color:#1F3552;
         line-height:1;
         text-align:center;
 
-        margin-top:-30px;
+        margin-top:-60px;
       }
 
       .crore-value{
