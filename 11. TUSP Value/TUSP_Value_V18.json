@@ -1,0 +1,64 @@
+{
+  "id": "com.max.tuspvaluewithouttax",
+  "version": "1.0.18",
+  "name": "TUSP Value Without Tax",
+  "newInstancePrefix": "TuspValueWithoutTax",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2316263B'><path d='M12 3L2 12h3v8h5v-5h4v5h5v-8h3L12 3z'/></svg>",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-tuspvaluewithouttax",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/11.%20TUSP%20Value/TUSP_Value_V18.js",
+      "integrity": "sha384-g8HewX5h3uRzLYUcnfqkAidj2IZkIInRMrQncpDkNWliGx6nActXk+joi607q0TX"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Milestone"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Measures"
+        }
+      ]
+    }
+  },
+  "properties": {},
+  "methods": {
+    "setTuspValue": {
+      "parameters": [
+        {
+          "name": "mainValue",
+          "type": "string"
+        },
+        {
+          "name": "croreValue",
+          "type": "string"
+        }
+      ]
+    },
+    "setAvgSalesPrice": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "name": "unit",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "events": {
+    "onTuspSelect": {},
+    "onAvgSalesPriceSelect": {}
+  }
+}
