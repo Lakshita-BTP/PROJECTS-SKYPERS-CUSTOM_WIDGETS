@@ -1,0 +1,64 @@
+{
+  "id": "com.max.customwidget",
+  "version": "1.0.12",
+  "name": "Custom Widget",
+  "newInstancePrefix": "CustomWidget",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2316263B'><path d='M3 3h18v18H3V3zm2 2v14h14V5H5zm2 10h2V9H7v6zm4 0h2V7h-2v8zm4 0h2v-4h-2v4z'/></svg>",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-custom",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/14.%20Custom%20Widget/Custom_Widget_12.js",
+      "integrity": "sha384-hX9dwXnx2A0PpuBnoNnXLWe0sFRERKKQ+XRjqrkrHAL23NWwdAjcPoPc6HcP0hxo"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Milestone"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Measures"
+        }
+      ]
+    }
+  },
+  "properties": {},
+  "methods": {
+    "setTuspValue": {
+      "parameters": [
+        {
+          "name": "mainValue",
+          "type": "string"
+        },
+        {
+          "name": "croreValue",
+          "type": "string"
+        }
+      ]
+    },
+    "setAvgSalesPrice": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "name": "unit",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "events": {
+    "onTuspSelect": {},
+    "onAvgSalesPriceSelect": {}
+  }
+}
