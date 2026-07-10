@@ -1,0 +1,86 @@
+{
+  "id": "com.max.saleschannelmix",
+  "version": "1.0.2",
+  "name": "Sales Channel Mix",
+  "newInstancePrefix": "SalesChannelMix",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSI4IiB5PSIxNiIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjRTVFNUVCIi8+PHJlY3QgeD0iOCIgeT0iMTYiIHdpZHRoPSIzNCIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI0Y5NzMxNiIvPjxyZWN0IHg9IjgiIHk9IjM2IiB3aWR0aD0iNDgiIGhlaWdodD0iOCIgcng9IjQiIGZpbGw9IiNFNUU1RUIiLz48cmVjdCB4PSI4IiB5PSIzNiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjgiIHJ4PSI0IiBmaWxsPSIjMTYyNjNCIi8+PC9zdmc+",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-saleschannelmix",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/07.%20Sales%20Channel%20Mix/Chart_SalesChannelMix_V2.js",
+      "integrity": "sha384-4dDui7pZoaDDYBECC505jbcrNYwpYe2qaOWNUQH/t3LDLqr5seveTtWvMM9wGUDz"
+    }
+  ],
+  "dataBindings": {},
+  "properties": {},
+  "methods": {
+    "setTitle": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "setRow": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "clearRows": {},
+    "setBarColor": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "setTrackColor": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "setUnitText": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string"
+        }
+      ]
+    },
+    "getSelectedRow": {
+      "returnType": "string"
+    },
+    "getSelectedName": {
+      "returnType": "string"
+    },
+    "getSelectedPercent": {
+      "returnType": "number"
+    },
+    "getSelectedUnits": {
+      "returnType": "number"
+    },
+    "getSelectedAmount": {
+      "returnType": "number"
+    },
+    "getSelectedIndex": {
+      "returnType": "integer"
+    }
+  },
+  "events": {
+    "onSelect": {},
+    "onRowClick": {
+      "description": "Triggered when a sales channel row is clicked."
+    }
+  }
+}
