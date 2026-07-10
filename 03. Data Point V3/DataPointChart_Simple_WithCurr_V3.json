@@ -1,0 +1,371 @@
+{
+  "id": "com.max.kpiV4",
+  "version": "1.0.3",
+  "name": "KPI Card Normal With Curr",
+  "newInstancePrefix": "KPICardV4",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSI4IiBmaWxsPSIjRkZGRkZGIiBzdHJva2U9IiNFNUU3RUIiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjE0IiByPSI4IiBmaWxsPSJyZ2JhKDI0OSwxMTUsMjIsMC4yKSIvPjx0ZXh0IHg9IjMyIiB5PSIzNiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwRjE3MkEiPjk5OTwvdGV4dD48cmVjdCB4PSI0IiB5PSI1NiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjQiIGZpbGw9IiNGOTczMTYiLz48L3N2Zz4=",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-kpinormal-curr",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/03.%20Data%20Point%20V3/DataPointChart_Simple_WithCurr_V3.js",
+      "integrity": "sha384-h2gxZ1mqD7trIoes3SS9oyuoebdEKl+jRxJa72IrUmXr8xvRchrM4F8iGjtzRE84"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Total Value"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Total Value"
+        }
+      ]
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "KPI Title",
+      "default": "TOTAL SALES (WITH TAX)"
+    },
+    "description": {
+      "type": "string",
+      "description": "KPI Description",
+      "default": "Sales Value With Tax"
+    },
+    "valueColor": {
+      "type": "string",
+      "description": "KPI Value Color",
+      "default": "#0F172A"
+    },
+    "titleColor": {
+      "type": "string",
+      "description": "Title Color",
+      "default": "#667085"
+    },
+    "circleColor": {
+      "type": "string",
+      "description": "Top Right Circle Color",
+      "default": "rgba(249,115,22,0.07)"
+    },
+    "bottomLineColor": {
+      "type": "string",
+      "description": "Bottom Line Color",
+      "default": "#F97316"
+    },
+    "showCurrency": {
+      "type": "boolean",
+      "description": "Show Currency Symbol",
+      "default": true
+    },
+    "decimalPlaces": {
+      "type": "integer",
+      "description": "Decimal Places",
+      "default": 0
+    },
+    "showFooter": {
+      "type": "boolean",
+      "description": "Show/Hide Footer",
+      "default": true
+    },
+    "unitText": {
+      "type": "string",
+      "description": "Unit Text",
+      "default": "Crore"
+    },
+    "unitColor": {
+      "type": "string",
+      "description": "Unit Color",
+      "default": "#000000"
+    },
+    "descriptionColor": {
+      "type": "string",
+      "description": "Description Color",
+      "default": "#667085"
+    }
+  },
+  "methods": {
+    "setTitle": {
+      "description": "Set KPI Title",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "string"
+        }
+      ]
+    },
+    "setDescription": {
+      "description": "Set KPI Description",
+      "parameters": [
+        {
+          "name": "description",
+          "type": "string"
+        }
+      ]
+    },
+    "setValueColor": {
+      "description": "Set KPI Value Color",
+      "parameters": [
+        {
+          "name": "valueColor",
+          "type": "string"
+        }
+      ]
+    },
+    "setTitleColor": {
+      "description": "Set Title Color",
+      "parameters": [
+        {
+          "name": "titleColor",
+          "type": "string"
+        }
+      ]
+    },
+    "getTitle": {
+      "description": "Get KPI Title",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "getDescription": {
+      "description": "Get KPI Description",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "getValueColor": {
+      "description": "Get KPI Value Color",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "getTitleColor": {
+      "description": "Get Title Color",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "setCircleColor": {
+      "description": "Set Circle Color",
+      "parameters": [
+        {
+          "name": "circleColor",
+          "type": "string"
+        }
+      ]
+    },
+    "getCircleColor": {
+      "description": "Get Circle Color",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "setBottomLineColor": {
+      "description": "Set Bottom Line Color",
+      "parameters": [
+        {
+          "name": "bottomLineColor",
+          "type": "string"
+        }
+      ]
+    },
+    "getBottomLineColor": {
+      "description": "Get Bottom Line Color",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "setTitlePosition": {
+      "description": "Set Title Position",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "integer"
+        },
+        {
+          "name": "y",
+          "type": "integer"
+        }
+      ]
+    },
+    "setValuePosition": {
+      "description": "Set Value Position",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "integer"
+        },
+        {
+          "name": "y",
+          "type": "integer"
+        }
+      ]
+    },
+    "setFooterPosition": {
+      "description": "Set Footer Position",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "integer"
+        },
+        {
+          "name": "y",
+          "type": "integer"
+        }
+      ]
+    },
+    "getTitlePosition": {
+      "description": "Get Title Position",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "getValuePosition": {
+      "description": "Get Value Position",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "getFooterPosition": {
+      "description": "Get Footer Position",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "setTitleFontSize": {
+      "description": "Set Title Font Size",
+      "parameters": [
+        {
+          "name": "size",
+          "type": "integer"
+        }
+      ]
+    },
+    "getTitleFontSize": {
+      "description": "Get Title Font Size",
+      "parameters": [],
+      "returnType": "integer"
+    },
+    "setValueFontSize": {
+      "description": "Set Value Font Size",
+      "parameters": [
+        {
+          "name": "size",
+          "type": "integer"
+        }
+      ]
+    },
+    "getValueFontSize": {
+      "description": "Get Value Font Size",
+      "parameters": [],
+      "returnType": "integer"
+    },
+    "setFooterFontSize": {
+      "description": "Set Footer Font Size",
+      "parameters": [
+        {
+          "name": "size",
+          "type": "integer"
+        }
+      ]
+    },
+    "getFooterFontSize": {
+      "description": "Get Footer Font Size",
+      "parameters": [],
+      "returnType": "integer"
+    },
+    "setShowCurrency": {
+      "description": "Show/Hide Currency",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "boolean"
+        }
+      ]
+    },
+    "getShowCurrency": {
+      "description": "Get Currency Visibility",
+      "parameters": [],
+      "returnType": "boolean"
+    },
+    "setDecimalPlaces": {
+      "description": "Set Decimal Places",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "integer"
+        }
+      ]
+    },
+    "getDecimalPlaces": {
+      "description": "Get Decimal Places",
+      "parameters": [],
+      "returnType": "integer"
+    },
+    "setShowFooter": {
+      "description": "Show/Hide Footer",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "boolean"
+        }
+      ]
+    },
+    "getShowFooter": {
+      "description": "Get Footer Visibility",
+      "parameters": [],
+      "returnType": "boolean"
+    },
+    "setUnitText": {
+      "description": "Set Unit Text",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "string"
+        }
+      ]
+    },
+    "getUnitText": {
+      "description": "Get Unit Text",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "setUnitColor": {
+      "description": "Set Unit Color",
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "getUnitColor": {
+      "description": "Get Unit Color",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "setDescriptionColor": {
+      "description": "Set Description Color",
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "getDescriptionColor": {
+      "description": "Get Description Color",
+      "parameters": [],
+      "returnType": "string"
+    },
+    "hideWidget": {},
+    "showWidget": {}
+  },
+  "events": {
+    "onCardClick": {
+      "description": "Triggered when KPI card is clicked"
+    },
+    "onResultChange": {
+      "description": "Triggered when KPI value changes"
+    }
+  }
+}
