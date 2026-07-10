@@ -1,0 +1,51 @@
+{
+  "id": "com.max.forecastingchart",
+  "version": "1.0.51",
+  "name": "Forecasting Chart",
+  "newInstancePrefix": "ForecastingChart",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB4PSI0IiB5PSI0IiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHJ4PSI4IiBmaWxsPSIjMUIyQTQxIi8+PGxpbmUgeDE9IjE0IiB5MT0iNTAiIHgyPSIxNCIgeTI9IjE0IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIvPjxsaW5lIHgxPSIxNCIgeTE9IjUwIiB4Mj0iNTIiIHkyPSI1MCIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiLz48cmVjdCB4PSIxOCIgeT0iNDAiIHdpZHRoPSI1IiBoZWlnaHQ9IjEwIiByeD0iMiIgZmlsbD0iIzJFQkU2OSIvPjxyZWN0IHg9IjI3IiB5PSIzNCIgd2lkdGg9IjUiIGhlaWdodD0iMTYiIHJ4PSIyIiBmaWxsPSIjRjU5RTBCIi8+PHJlY3QgeD0iMzYiIHk9IjI4IiB3aWR0aD0iNSIgaGVpZ2h0PSIyMiIgcng9IjIiIGZpbGw9IiNFRjQ0NDQiLz48cG9seWxpbmUgcG9pbnRzPSIxNiw0MiAyNCwzNiAzMywzMCA0MiwyMiA1MCwxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjBBNUZBIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iNDIiIHI9IjIuNSIgZmlsbD0iIzYwQTVGQSIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iMzYiIHI9IjIuNSIgZmlsbD0iIzYwQTVGQSIvPjxjaXJjbGUgY3g9IjMzIiBjeT0iMzAiIHI9IjIuNSIgZmlsbD0iIzYwQTVGQSIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iMjIiIHI9IjIuNSIgZmlsbD0iIzYwQTVGQSIvPjxjaXJjbGUgY3g9IjUwIiBjeT0iMTYiIHI9IjIuNSIgZmlsbD0iIzYwQTVGQSIvPjwvc3ZnPg==",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-forecastingchart",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/13.%20Forecasting%20Chart/Forecasting_Chart_V51.js",
+      "integrity": "sha384-DcGWgp4XORUnobj48G3ELfntJxzqKr8sZoVrmGrQeM3Q8Z8w7cRZl0lG9/sb8ArP"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Fiscal Year"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Amount and Forecast Buckets"
+        }
+      ]
+    }
+  },
+  "properties": {},
+  "methods": {
+    "getSelectedYear": {
+      "returnType": "string"
+    },
+    "getSelectedBucket": {
+      "returnType": "string"
+    },
+    "getSelectedValue": {
+      "returnType": "number"
+    },
+    "hideWidget": {},
+    "showWidget": {}
+  },
+  "events": {
+    "onYearClick": {},
+    "onBucketClick": {}
+  }
+}
