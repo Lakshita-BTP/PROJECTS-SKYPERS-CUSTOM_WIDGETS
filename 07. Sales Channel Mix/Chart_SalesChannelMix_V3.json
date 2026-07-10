@@ -75,7 +75,9 @@
     },
     "getSelectedIndex": {
       "returnType": "integer"
-    }
+    },
+    "hideWidget": {},
+    "showWidget": {}
   },
   "events": {
     "onSelect": {},
