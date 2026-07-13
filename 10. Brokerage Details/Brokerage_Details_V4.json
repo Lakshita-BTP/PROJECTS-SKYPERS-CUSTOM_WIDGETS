@@ -1,0 +1,115 @@
+{
+  "id": "com.max.brokeragedetails",
+  "version": "1.0.4",
+  "name": "Brokerage Details",
+  "newInstancePrefix": "BrokerageDetails",
+  "vendor": "MAX",
+  "supportsExport": true,
+  "icon": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2315263A'><path d='M12 2L4 5v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V5l-8-3zm1 15h-2v-1H9v-2h2v-1c-1.66 0-3-1.34-3-3s1.34-3 3-3V6h2v1h2v2h-2v1c1.66 0 3 1.34 3 3s-1.34 3-3 3v1z'/></svg>",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-max-brokeragedetails",
+      "url": "https://cdn.jsdelivr.net/gh/Lakshita-BTP/PROJECTS-SKYPERS-CUSTOM_WIDGETS@main/10.%20Brokerage%20Details/Brokerage_Details_V4.js",
+      "integrity": "sha384-nfiNGyB6o0/8x5CH/U6FGHrLAprU+hzqJDLq2x+B2uxEkGBsXbNz1xqXuu6Dl+RU"
+    }
+  ],
+  "dataBindings": {
+    "myDataBinding": {
+      "feeds": [
+        {
+          "id": "dimensions",
+          "type": "dimension",
+          "description": "Milestone"
+        },
+        {
+          "id": "measures",
+          "type": "mainStructureMember",
+          "description": "Measures"
+        }
+      ]
+    }
+  },
+  "properties": {},
+  "methods": {
+    "setTitle": {
+      "parameters": [
+        {
+          "name": "title",
+          "type": "string"
+        }
+      ]
+    },
+    "setTitleStyle": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "fontSize",
+          "type": "string"
+        }
+      ]
+    },
+    "setValueStyle": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setLabelStyle": {
+      "parameters": [
+        {
+          "name": "color",
+          "type": "string"
+        }
+      ]
+    },
+    "setBottomSection": {
+      "parameters": [
+        {
+          "name": "label",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "number"
+        },
+        {
+          "name": "valueColor",
+          "type": "string"
+        }
+      ]
+    },
+    "setValues": {
+      "parameters": [
+        {
+          "name": "paid",
+          "type": "number"
+        },
+        {
+          "name": "due",
+          "type": "number"
+        }
+      ]
+    },
+    "setInterestBalance": {
+      "parameters": [
+        {
+          "name": "value",
+          "type": "number"
+        }
+      ]
+    },
+    "hideWidget": {},
+    "showWidget": {}
+  },
+  "events": {
+    "onBrokeragePaidSelect": {},
+    "onBrokerageDueSelect": {},
+    "onInterestBalanceSelect": {}
+  }
+}
